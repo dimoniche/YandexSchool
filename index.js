@@ -116,6 +116,8 @@ function request() {
                             } else {
                                 form.find('button').prop('disabled', false);
                             }
+                        } else {
+                            error("Не определенное состояние");
                         }
                     }
                 }
