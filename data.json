@@ -1,0 +1,18 @@
+{
+  "result": [
+    {
+      "id": "1",
+      "status": "success"
+    },
+    {
+      "id": "2",
+      "status": "error",
+      "reason": "Ошибка"
+    },
+    {
+      "id": "3",
+      "status": "progress",
+      "timeout": "1000"
+    }
+  ]
+}

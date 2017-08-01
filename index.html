@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <script src="jquery.form.js"></script>
+
+        <meta charset="utf-8">
+        <title>Школа Яндекс</title>
+        <style>
+            .error { 
+                border-style: solid;
+                padding: 1px;
+                color: red;
+            }
+            .success { 
+                border-style: solid;
+                padding: 1px;
+                color: green;
+            }
+            .progress { 
+                border-style: solid;
+                padding: 1px;
+                color: yellow;
+            }
+        </style> 
+    </head>
+
+     <body>
+        <form id="myForm" method="GET" action="http://localhost:3000/result/3">
+            <p><b>ФИО:</b></p>
+            <p><input type="text" id="fio" name="fio"></p>
+
+            <p><b>Email :</b></p>
+            <p><input type="text" id="email" name="email"></p>
+
+            <p><b>Телефон :</b></p>
+            <p><input type="text" id="phone" name="phone"></p>
+
+            <p><button id= "submitButton" type="submit" form="myForm" onclick="return isGoodRequest()">Отправить форму</button></p>
+
+            <div id="resultContainer"> </div>
+        </form>
+    </body>
+        
+    <script src="index.js"></script>
+</html>
